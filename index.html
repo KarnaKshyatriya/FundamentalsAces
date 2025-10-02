@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        
+
+       }
+        .header{
+justify-content: center;
+display:flex;
+            align-items: center;
+            flex-direction: column;
+        }
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 150px 90px 0px 40px;
+  flex-direction: row; /* ✅ make them side by side */
+}
+
+.side {
+  flex: 1 1 30%; /* 30% width */
+  background-color: aquamarine;
+  padding: 20px;
+  height:640px;
+  overflow-y: auto;
+}
+
+.main {
+  flex: 0 0 70%; /* 70% width */
+  background-color: rgb(160, 23, 23);
+  padding: 20px;
+  color: #000;
+  height:640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+font-size: 45px;
+}
+h1{
+    text-align: center;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .side, .main {
+    flex: 100%; /* full width on small screens */
+  }
+}
+.head{
+    background-color: blue;
+    font-size: 40px;
+}
+.main a {
+  color: yellow;       /* 🔹 change text color */
+  text-decoration: none; /* 🔹 remove underline */
+  font-weight: bold;     /* optional: make it bold */
+}
+.main a:hover {
+  color: red; 
+  transition: 10s;          /* 🔹 hover effect if you want */
+}
+</style>
+</head>
+</head>
+<body>
+    <div class="header">
+<marquee class="head">ACES Infotech</marquee>
+<img src="guha.jpg" alt="not found">
+    </div>
+  
+  
+  <div class="row">
+  <div class="side">
+    <h1>About Aces</h1>
+    <b>ACES Infotech Private Limited, an organisation of National repute and presence, has established itself as a leading IT & ITES Consultancy House in India with School Computer Education as its flagship project for over last three decades. ACES houses, a team of professionals / experts in the field of IT Training, Software/Multimedia Contentent Developmet, Skill Development Training and System Integration & Management who have been responsible for maintaining “TOTAL QUALITY MANAGEMENT” of the organisation.
+
+ACES has also been dealing with customised software assignments, IT training, Hardware Maintenance jobs for Government, PSUs and several Corporate houses.
+
+ACES has played a pioneering role in initiating Computer Education and Digital Learning to school classrooms. Since its inception in 1989, ACES has imparted training to several thousands students at various levels of education in over numerous schools all over the country with Pan – Indian presence in 23 states and with an experience of conducting “turnkey” projects in 17 states of the country.</b>
+<h1>Our Mission</h1>
+<b>ACES wishes to build up a strong bond with various organisations involving Training Programmes based on Artificial Intelligence (AI), Internet of things (IoT) and Robotics, as a component of  School and Higher Computer Education, Computer Aided Learning, Content Development in various regional languages, Digital Classrooms, Skill Development, Soft Skills, Software Development, Teachers’ Training, E–Learning, Corporate IT Training,  Works, Sales, Maintenance, Upgradation & Networking of computer systems, Curriculum Development and Vocational Training and wishes to take up every opportunity in various aspects of involvement in the ever widening field of Information Technology.</b>
+    </div>
+  <div class="main">
+    <h1>About Computer Fundamentals</h1>
+    <div class="Fundamentals"><a href="word.pdf" target="_blank">Click here to read about computers</a>
+</div>
+<div class="word"> <a href="word2.pdf" target="_blank">About MS-Word</a>
+</div>
+<div class="Excel"> <a href="word3.pdf" target="_blank">About MS-Excel</a>
+</div>
+
+  </div>
+
+</body>
+</html>
