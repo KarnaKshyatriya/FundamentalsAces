@@ -5,69 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       body{
-        
+       body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-       }
-        .header{
-justify-content: center;
-display:flex;
-            align-items: center;
-            flex-direction: column;
-        }
+/* Header section */
+.header {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.header img {
+  max-width: 100%;
+  height: auto; /* 🔹 Image becomes responsive */
+}
+
+/* Marquee style */
+.head {
+  background-color: blue;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Layout row */
 .row {
   display: flex;
-  /* flex-wrap: wrap; */
-  margin: 150px 90px 0px 40px;
-  flex-direction: row; /* ✅ make them side by side */
+  margin: 50px 40px 0px 40px;
+  flex-direction: row;
+  gap: 20px;
 }
 
+/* Sidebar */
 .side {
-  flex: 1 1 30%; /* 30% width */
+  flex: 1 1 30%;
   background-color: aquamarine;
   padding: 20px;
-  height:640px;
+  height: 640px;
   overflow-y: auto;
+  font-size: 18px;
 }
 
+/* Main content */
 .main {
-  flex: 0 0 70%; /* 70% width */
+  flex: 0 0 70%;
   background-color: rgb(160, 23, 23);
   padding: 20px;
   color: #000;
-  height:640px;
+  height: 640px;
   display: flex;
   justify-content: center;
   align-items: center;
-flex-direction: column;
-font-size: 45px;
-}
-h1{
-    text-align: center;
+  flex-direction: column;
+  font-size: 24px;
+  text-align: center;
 }
 
-/* Responsive: stack on small screens */
+h1 {
+  text-align: center;
+}
+
+/* Links */
+.main a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.main a:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+/* ✅ Responsive design for smaller screens */
 @media (max-width: 768px) {
   .row {
-    flex-direction: column;
+    flex-direction: column; /* Stack vertically */
+    margin: 20px;
   }
-  .side, .main {
-    flex: 100%; /* full width on small screens */
+
+  .side,
+  .main {
+    flex: 100%;
+    height: auto; /* Let content decide height */
+    font-size: 16px;
   }
-}
-.head{
-    background-color: blue;
+
+  .head {
+    font-size: 18px;
+  }
+
+  .main {
+    font-size: 18px;
+  }
+
+  h1 {
     font-size: 22px;
+  }
+
+  .header img {
+    width: 100%;     /* Ensures full width */
+    max-width: 300px; /* Optional max size */
+    height: auto;
+  }
 }
-.main a {
-  color: yellow;       /* 🔹 change text color */
-  text-decoration: none; /* 🔹 remove underline */
-  font-weight: bold;     /* optional: make it bold */
-}
-.main a:hover {
-  color: red; 
-  transition: 10s;          /* 🔹 hover effect if you want */
-}
+
 </style>
 </head>
 </head>

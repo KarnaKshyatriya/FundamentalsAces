@@ -1,0 +1,64 @@
+
+body{
+        
+
+       }
+        .header{
+justify-content: center;
+display:flex;
+            align-items: center;
+            flex-direction: column;
+        }
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 150px 90px 0px 40px;
+  flex-direction: row; /* ✅ make them side by side */
+}
+
+.side {
+  flex: 1 1 30%; /* 30% width */
+  background-color: aquamarine;
+  padding: 20px;
+  height:640px;
+  overflow-y: auto;
+}
+
+.main {
+  flex: 0 0 70%; /* 70% width */
+  background-color: rgb(160, 23, 23);
+  padding: 20px;
+  color: #000;
+  height:640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+font-size: 45px;
+}
+h1{
+    text-align: center;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .side, .main {
+    flex: 100%; /* full width on small screens */
+  }
+}
+.head{
+    background-color: blue;
+    font-size: 22px;
+}
+.main a {
+  color: yellow;       /* 🔹 change text color */
+  text-decoration: none; /* 🔹 remove underline */
+  font-weight: bold;     /* optional: make it bold */
+}
+.main a:hover {
+  color: red; 
+  transition: 10s;          /* 🔹 hover effect if you want */
+}
